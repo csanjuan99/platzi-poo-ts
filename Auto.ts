@@ -22,6 +22,11 @@ export class Auto {
     }
 
 
+    // Método privado para establecer el modelo solo
+    // desde dentro de la clase Auto
+    private setModel(model: string): void {
+        this.model = model;
+    }
 }
 
 // const auto = new Auto();
@@ -36,3 +41,5 @@ console.log(custom.print()); // -> Toyota Corolla (2021)
 custom.setBrand("Honda");
 
 console.log(custom.print()); // -> Honda Corolla (2021)
+
+// custom.setModel("Civic"); // Error: setModel is private
