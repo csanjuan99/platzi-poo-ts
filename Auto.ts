@@ -13,13 +13,15 @@ export class Auto {
         this.year = year;
     }
 
-    print(): string {
+    public print(): string {
         return `${this.brand} ${this.model} (${this.year})`;
     }
 
-    setBrand(brand: string): void {
+    public setBrand(brand: string): void {
         this.brand = brand;
     }
+
+
 }
 
 // const auto = new Auto();
